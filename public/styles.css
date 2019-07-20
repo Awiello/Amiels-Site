@@ -1,8 +1,50 @@
 /*default styles*/
-
 html{
     scroll-behavior: smooth;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.divisionOne{
+    height: 60%;
+    width:100%;
+    background-color: lightblue;
+    position: relative;
+
+}
+
+.divisionOne img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.headline{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    font-size: 100px;
+    transform: translate(-20%, -70%);
+    color: white;
+    z-index: 3;
+}
+
+.divisionOne::after{
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.3;
+}
+
 
 h1{
   font-family: 'PT Sans Narrow',Arial, sans-serif;
@@ -23,18 +65,11 @@ body{
   text_transform: uppercase;
 }
 
-/*navbar margin hover*/
+
 .navbar a:hover{
   border-bottom: solid 2px #00d2ff;
 }
 
-/*landing page styles*/
-.header{
-  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../images/wallpapaer.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-}
 
 .header h1{
   color: #fff;
@@ -61,36 +96,6 @@ body{
 
 }
 
-#fullpage{
-    height: 100vh;
-}
-
-#fullpage section{
-    height: 100vh;
-}
-
-#fullpage section:nth-child(1) {
-}
-
-#fullpage section:nth-child(2){
-    background-color: chocolate;
-}
-#fullpage section:nth-child(3){
-    background-color: darkcyan;
-}
-#fullpage section:nth-child(4){
-    background-color: darkred;
-}
-#fullpage section:nth-child(5){
-    background-color: dimgrey;
-}
-
-#underconst{
-padding-left:200px;
-height: 100vh;
-float: left;
-}
-
 .section-one-text{
     width: 30%;
     padding-top: 80px;
@@ -102,31 +107,36 @@ float: left;
     float: left;
 }
 
-#forephoto{
-    padding-top: 70px;
-    padding-right:300px;
-    float: right;
-    height: 100vh;
+
+
+.parallax-window {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section{
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
     
 }
 
-#film{
-    position:absolute;
-    top:0;
+.slider{
+    position: absolute;
+    top: 0;
     left:0;
-    width:100%;
-    height:100%;
-    background: rgba(0, 0, 0, 0.3);
-
-    z-index:100;
-}
-.wrap{
     width: 100%;
     height: 100vh;
-    background-color: #232f3d;
+    z-index: -1;
 }
 
-.parallax-window {
-    height: 100%;
-    background: transparent;
+#LandingSection{
+    margin-top: 15vh;
+}
+.sec2{
+    height: 100vh;
+    width: 100%;
 }
