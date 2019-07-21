@@ -2,41 +2,53 @@
 
 <head>
     <meta charset="utf-8">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script>
+  function openSlideMenu(){
+    document.getElementById('menu').style.width = '250px';
+    document.getElementById('content').style.marginLeft = '250px';
+  }
+  function closeSlideMenu(){
+    document.getElementById('menu').style.width = '0';
+    document.getElementById('content').style.marginLeft = '0';
+  }
+</script>
     <script src="parallax.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AmielCueto|Developer</title>
 </head>
 
 <body>
-    
-    <!--navbar-->
+   
 
+<!--New Navbar-->
+     <div id="content">
 
-    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">Amiel Cueto|Developer</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#sect1">Home</a></li>
-                    <li><a href="#sect2">Services</a></li>
-                    <li><a href="#sect3">About</a></li>
-                    <li><a href="#sect4">Projects</a></li>
-                    <li><a href="#sect5">Contacts</a></li>
-                </ul>
-            </div>
-        </div>
+    <span class="slide">
+      <a href="#" onclick="openSlideMenu()">
+        <i class="fas fa-bars"></i>
+      </a>
+    </span>
+
+    <div id="menu" class="nav">
+      <a href="#" class="close" onclick="closeSlideMenu()">
+        <i class="fas fa-times"></i>
+      </a>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Portfolio</a>
+      <a href="#">Contact</a>
     </div>
+  </div>
+
+        
+<!--old navbar-->
+
 
     <header id="LandingSection">
                 <section>
@@ -49,10 +61,7 @@
 
     <div class="slider">
     </div>
-        
-    <section class="sec2">
-        
-    </section>
+    
     
     <!-- end sections -->
 
