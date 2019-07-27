@@ -1268,3 +1268,84 @@ h5{
         width: 75%;
     }
 }
+
+
+/*section three*/
+
+.sect3upwall{
+    z-index: 1;
+}
+
+.projectsIntroMainDiv{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+}
+
+.appPreviewDiv{
+    height: inherit;
+    width: 50%;
+}
+
+
+.appPreviewDescDiv{
+    height: inherit;
+    width: 50%;
+    padding-left: 30px;
+}
+
+
+.mockupone{
+    height: inherit;
+    width: auto;
+    float: right;
+}
+
+/*section four*/
+#sect4{
+    height: 30vh;
+    width: 100%;
+    background:#95e8d7;
+}
+
+.viewMyProjectText{
+    font-size: 90px;
+    font-family: 'Bungee', cursive;
+    color: white;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #444444;
+    font-weight: 500;
+    text-shadow: 6px 7px #888888;
+    
+}
+
+.projectSubtext{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;  
+    font-size: 20px;
+}
+
+.projectsButton{
+    font-family: 'Bungee', cursive;
+    color: white;
+    font-size: 16px;
+    background-color: antiquewhite;
+    border-radius: 12px;
+    border: solid;
+    border-color: gray;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #444444;
+    padding: 10px;
+    font-weight: 500;
+    text-shadow: 2px 2px #888888;
+    box-shadow: 3px 6px #888888;
+    cursor: pointer;
+    outline: none;
+    
+}
+
+.projectsButton:active {
+  background-color: #dbdbdb;
+   box-shadow: 3px 3px #888888;
+  transform: translateY(4px);
+}

@@ -8,13 +8,15 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="aos.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+   
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Bungee+Outline&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
 
+   
+   
     <script>
         function openSlideMenu() {
             document.getElementById('menu').style.width = '250px';
@@ -29,12 +31,8 @@
     <script src="parallax.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AmielCueto|FullStack</title>
-    <script src="aos.js"></script>
     <script>
-        AOS.init({
-            offset: 200,
-            duration: 1000,
-        });
+    AOS.init();
     </script>
 
     <!--<div data-aos="fade-right"></div>-->
@@ -133,7 +131,7 @@
             
                <div class="blockContainer">
                
-                <div class="frontEndBlock">
+                <div class="frontEndBlock" data-aos="fade-right">
                 <h5>Front-End</h5>
                     <div class="barContainer">
                         <li class="html">HTML</li>
@@ -144,7 +142,7 @@
                     </div>
                 </div>
 
-                <div class="backEndBlock">
+                <div class="backEndBlock" data-aos="fade-up">
                 <h5>Back-End</h5>
                     <div class="barContainer">
                         <li class="java">Java</li>
@@ -154,7 +152,7 @@
                     </div>
                 </div>
 
-                <div class="designBlock">
+                <div class="designBlock"  data-aos="fade-down">
                 <h5>Design</h5>
                     <div class="barContainer">
                         <li class="photoshop">Photoshop</li>
@@ -163,7 +161,7 @@
                     </div>
                 </div>
                 
-                <div class="othersBlock">
+                <div class="othersBlock" data-aos="fade-left">
                 <h5>Platforms</h5>
                     <div class="barContainer">
                         <li class="android">Android</li>
@@ -181,11 +179,33 @@
     </section>
     
     <section id="sect3">
-    <p>Dis is section 3</p>
+    <img class="sect3upwall" src="smoove.png">
+    <div class="projectsIntroMainDiv">
+    
+        <div class="appPreviewDiv">
+            <img class="mockupone" src="mockupandroid.png">
+        </div>
+        
+        <div class="appPreviewDescDiv">
+            <h3 class="viewMyProjectText">View <br> my projects</h3>
+            <p class="projectSubtext">Check-out my current WIP's and <br> finished projects as well. </p>
+            <button class="projectsButton">View Projects</button>
+        </div>
+    </div>
+    
+    <img class="sect3downwall" src="footertopper.png">
+    
+    </section>
+    
+    <section id="sect4">
     </section>
 
     <!-- end sections -->
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+    AOS.init();
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
