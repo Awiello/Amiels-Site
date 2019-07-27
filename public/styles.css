@@ -11,18 +11,65 @@ html{
 
 
 .divisionOne{
-    height: 60%;
-    width:100%;
-    background-color: lightblue;
+    width: 100%;
+    height: 80%;
+    box-shadow: 5px 10px #888888;
     position: relative;
-
+    left: 10%;
+    border-radius: 15px;
+    background-color: floralwhite;
+    transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+	.text-piv-div { width: 100%; height: auto; }
 }
 
-.divisionOne img{
+
+
+.text-pic-div{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 15px;
+    padding: 25px;
+    
+    
+    
 }
+
+.profile-image{
+    box-shadow: 5px 8px #888888;
+    border-radius: 50%;
+    height: 60%;
+    width: 19%;
+    position: absolute;
+    left:17%;
+}
+
+.fullName{
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;    
+    left: 26vh;
+    bottom: 7vh;
+}
+
+.jobTitle{
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;    
+    left: 28vh;
+    bottom: 3vh;
+}
+
+.introTextDiv{
+    float: right;
+    box-shadow: 5px 8px #888888;
+    background-color: blanchedalmond;
+    height: 100%;
+    width: 50%;
+    border-radius: 15px;
+}
+
 
 .headline{
     position: absolute;
@@ -34,28 +81,14 @@ html{
     z-index: 3;
 }
 
-.divisionOne::after{
-    content: "";
-    background-color: black;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0.3;
-}
-
-
-h1{
-  font-family: 'PT Sans Narrow',Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 700;
-
-}
 
 body{
   overflow-x: hidden;
   overflow-x: hidden;
+background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(240)'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%2399ffeb'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='540' height='450' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.1'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
 }
 
 .btn {
@@ -116,11 +149,11 @@ body{
     object-fit: cover;
 }
 
-section{
-    display: flex;
-    height: 80vh;
-    justify-content: center;
-    align-items: center;
+#sect1{
+    width: 100%;
+    position: absolute;
+    height: 60vh;
+    top: 16%;
     
 }
 
@@ -130,63 +163,1108 @@ section{
     left:0;
     width: 100%;
     height: 100vh;
-    background-image: url("image.jpg");
     z-index: -1;
 }
 
 #LandingSection{
-}
-.sec2{
+     width: 100%;
     height: 100vh;
+    
+}
+#sect2{
+    height:100vh;
     width: 100%;
 }
 
-
-@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:800');
-
-body {
-	font-family: 'Alegreya Sans', sans-serif;
-	overflow-x: hidden;
-}
-.nav {
-	height: 100%;
-	width: 0;
-	position: fixed;
-	z-index: 4;
-	top: 0;
-	left: 0;
-	background-color: #111;
-	opacity: .9;
-	overflow-x: hidden;
-	padding-top: 60px;
-	transition: 0.7s;
-}
-.nav a {
-	display: block;
-	padding: 20px 30px;
-	font-size: 25px;
-	text-decoration: none;
-	color: #ccc;
-}
-.nav a:hover {
-	color: #fff;
-	transition: 0.4s;
-}
-.nav .close {
-	position: absolute;
-	top: 0;
-	right: 22px;
-	margin-left: 50px;
-	font-size: 30px
-}
-.slide a {
-	color: #000;
-	font-size: 36px;
-}
-#content {
-	padding: 20px;
-	transition: margin-left 0.7s;
-	overflow: hidden;
-	width: 100%;
+#sect3{
+    height:100vh;
+    width: 100%;
 }
 
+.wavetwo{
+    position: absolute;
+    bottom: 0;
+     transform: translatex(0px);
+	animation: waves 3s ease-in-out infinite;
+}
+
+.waveone{
+    position: absolute;
+    bottom: 0;
+    transform: translatex(0px);
+	animation: wavestwo 3s ease-in-out infinite;
+}
+
+.sectTwoDiv{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to top, rgb(249,249,249), rgba(255,0,0,0), rgb(249,249,249));
+    
+}
+
+.myStatsDiv{
+    padding:20px;
+    margin-top: 10vh;
+    height: 15vh;
+    width: 50%;
+    background-color: turquoise;
+    position: absolute;
+    left: 25%;
+    box-shadow: 5px 8px #888888;
+    border-radius: 15px;
+}
+
+.myStatsDivInside{
+    box-shadow: 5px 8px #888888;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    background-color:floralwhite; 
+}
+
+.myStatsTitle{
+    top: 5px;
+    position: absolute;
+    font-family: 'Bungee', cursive;
+    font-size: 45px;
+    width: 95%;
+    color: white;
+    text-align: center;
+    text-shadow: 6px 5px #888888;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: #444444;
+}
+
+.mainMyStatsDiv{
+    height: 65vh;
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    margin-top: 30vh;
+   background-color: floralwhite;
+    border-radius: 15px;
+    box-shadow: 5px 8px #888888;
+    display: flex;
+}
+
+/** Floating aniamtion **/
+
+@keyframes float {
+	0% {
+		box-shadow: 5px 10px #888888;
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 5px 10px #888888;
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 5px 10px #888888;
+		transform: translatey(0px);
+	}
+}
+
+@keyframes waves {
+	0% {
+		transform: translatex(0px);
+	}
+	50% {
+		transform: translatex(-20px);
+	}
+	100% {
+		transform: translatex(0px);
+	}
+}
+
+@keyframes wavestwo {
+	0% {
+		transform: translatex(0px);
+	}
+	50% {
+		transform: translatex(20px);
+	}
+	100% {
+		transform: translatex(0px);
+	}
+}
+
+@keyframes blockOnefloat {
+	0% {
+		
+		transform: translatey(0px);
+	}
+	50% {
+		
+		transform: translatey(-10px);
+	}
+	100% {
+		
+		transform: translatey(0px);
+	}
+}
+
+@keyframes blockTwofloat {
+	0% {
+		box-shadow: 5px 10px #888888;
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 5px 10px #888888;
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 5px 10px #888888;
+		transform: translatey(0px);
+	}
+}
+
+@keyframes blockThreefloat {
+	0% {
+		box-shadow: 5px 10px #888888;
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 5px 10px #888888;
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 5px 10px #888888;
+		transform: translatey(0px);
+	}
+}
+
+@keyframes blockFourfloat {
+	0% {
+		box-shadow: 5px 10px #888888;
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 5px 10px #888888;
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 5px 10px #888888;
+		transform: translatey(0px);
+	}
+}
+/*styles for skill blocks*/
+
+.blockContainer{
+    animation: blockOnefloat 4s ease-in-out infinite;
+    display: flex;
+    height: inherit;
+    width: inherit;
+    position: absolute;
+    left: 6%;
+    
+}
+
+.frontEndBlock{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5vh;
+    width: 25%;
+    height: 55vh;
+    margin-right: 5vh;
+    background-color: aqua;
+    border-radius: 15px;
+    box-shadow: 5px 8px #888888;
+    
+}
+
+.backEndBlock{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5vh;
+    width: 25%;
+    height: 55vh;
+    margin-right: 5vh;
+    background-color: tomato;
+    border-radius: 15px;
+    box-shadow: 5px 8px #888888;
+}
+
+.designBlock{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5vh;
+    width: 25%;
+    height: 55vh;
+    margin-right: 5vh;
+    background-color: burlywood;
+    border-radius: 15px;
+    box-shadow: 5px 8px #888888;
+}
+
+.othersBlock{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5vh;
+    width: 25%;
+    height: 55vh;
+    margin-right: 5vh;
+    background-color: turquoise;
+    border-radius: 15px;
+    box-shadow: 5px 8px #888888;
+}
+
+
+h5{
+    font-family: 'Bungee', cursive;
+    font-size: 25px;
+    width: 95%;
+    color: white;
+     text-shadow: 4px 3px #888888;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #444444;
+}
+
+.barContainer{  
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+
+.frontEndBlock{
+/*    animation: blockOnefloat 4s ease-in-out infinite;*/
+}
+
+.backEndBlock{
+/*    animation: blockTwofloat 4s ease-in-out infinite;*/
+}
+
+.designBlock{
+/*    animation: blockThreefloat 3s ease-in-out infinite;*/
+}
+
+.othersBlock{
+/*    animation: blockFourfloat 3s ease-in-out infinite;*/
+}
+
+/*styles for skillbars*/
+
+/*html*/
+
+.html {
+    font-family: 'Bungee', cursive;
+    color: white;
+    margin: 25px 0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #444444;
+    position: relative;
+    list-style: none;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.html:before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background-color: blanchedalmond;
+    border-radius: 1000px;
+    border-style: solid;
+    border-color: blanchedalmond;
+    box-shadow: 2px 4px #888888;
+}
+
+.html:after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 25px;
+    background-color: rgba(54, 126, 223, 1);
+    border-radius: 1000px;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    border-style: solid;
+    border-color: blanchedalmond;
+}
+
+
+/*css*/
+
+.css {
+    font-family: 'Bungee', cursive;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #444444;
+    position: relative;
+    list-style: none;
+    margin: 50px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.css:before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background-color: blanchedalmond;
+    border-radius: 1000px;
+    border-style: solid;
+    border-color: blanchedalmond;
+    box-shadow: 2px 4px #888888;
+}
+
+.css:after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 25px;
+    background-color: rgba(54, 126, 223, 1);
+    border-radius: 1000px;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    border-style: solid;
+    border-color: blanchedalmond;
+}
+
+/*js*/
+
+.js {
+    font-family: 'Bungee', cursive;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #444444;
+    position: relative;
+    list-style: none;
+    margin: 50px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.js:before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background-color: blanchedalmond;
+    border-radius: 1000px;
+    border-style: solid;
+    border-color: blanchedalmond;
+    box-shadow: 2px 4px #888888;
+}
+
+.js:after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 25px;
+    background-color: rgba(54, 126, 223, 1);
+    border-radius: 1000px;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    border-style: solid;
+    border-color: blanchedalmond;
+}
+
+
+/*java*/
+
+.java {
+    font-family: 'Bungee', cursive;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #444444;
+    position: relative;
+    list-style: none;
+    font-weight: 500;
+    margin: 25px 0;
+    text-transform: uppercase;
+}
+
+.java:before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background-color: blanchedalmond;
+    border-radius: 1000px;
+    border-style: solid;
+    border-color: blanchedalmond;
+    box-shadow: 2px 4px #888888;
+}
+
+.java:after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 25px;
+    background-color: rgba(54, 126, 223, 1);
+    border-radius: 1000px;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    border-style: solid;
+    border-color: blanchedalmond;
+}
+
+
+/*kotlin*/
+
+.kotlin {
+    font-family: 'Bungee', cursive;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #444444;
+    position: relative;
+    list-style: none;
+    margin: 50px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.kotlin:before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background-color: blanchedalmond;
+    border-radius: 1000px;
+    border-style: solid;
+    border-color: blanchedalmond;
+    box-shadow: 2px 4px #888888;
+}
+
+.kotlin:after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 25px;
+    background-color: rgba(54, 126, 223, 1);
+    border-radius: 1000px;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    border-style: solid;
+    border-color: blanchedalmond;
+}
+
+/*php*/
+
+.php {
+    font-family: 'Bungee', cursive;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #444444;
+    position: relative;
+    list-style: none;
+    margin: 50px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.php:before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background-color: blanchedalmond;
+    border-radius: 1000px;
+    border-style: solid;
+    border-color: blanchedalmond;
+    box-shadow: 2px 4px #888888;
+}
+
+.php:after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 25px;
+    background-color: rgba(54, 126, 223, 1);
+    border-radius: 1000px;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    border-style: solid;
+    border-color: blanchedalmond;
+}
+
+/*C#*/
+
+.csharp {
+    font-family: 'Bungee', cursive;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #444444;
+    position: relative;
+    list-style: none;
+    margin: 50px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.csharp:before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background-color: blanchedalmond;
+    border-radius: 1000px;
+    border-style: solid;
+    border-color: blanchedalmond;
+    box-shadow: 2px 4px #888888;
+}
+
+.csharp:after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 25px;
+    background-color: rgba(54, 126, 223, 1);
+    border-radius: 1000px;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    border-style: solid;
+    border-color: blanchedalmond;
+}
+
+
+/*dart*/
+
+.dart {
+    font-family: 'Bungee', cursive;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #444444;
+    position: relative;
+    list-style: none;
+    margin: 50px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.dart:before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background-color: blanchedalmond;
+    border-radius: 1000px;
+    border-style: solid;
+    border-color: blanchedalmond;
+    box-shadow: 2px 4px #888888;
+}
+
+.dart:after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 25px;
+    background-color: rgba(54, 126, 223, 1);
+    border-radius: 1000px;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    border-style: solid;
+    border-color: blanchedalmond;
+}
+
+
+/*photoshop*/
+
+.photoshop {
+    font-family: 'Bungee', cursive;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #444444;
+    position: relative;
+    list-style: none;
+    margin: 25px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.photoshop:before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background-color: blanchedalmond;
+    border-radius: 1000px;
+    border-style: solid;
+    border-color: blanchedalmond;
+    box-shadow: 2px 4px #888888;
+}
+
+.photoshop:after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 25px;
+    background-color: rgba(54, 126, 223, 1);
+    border-radius: 1000px;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    border-style: solid;
+    border-color: blanchedalmond;
+}
+
+/*illustrator*/
+
+.illustrator {
+    font-family: 'Bungee', cursive;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #444444;
+    position: relative;
+    list-style: none;
+    margin: 50px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.illustrator:before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background-color: blanchedalmond;
+    border-radius: 1000px;
+    border-style: solid;
+    border-color: blanchedalmond;
+    box-shadow: 2px 4px #888888;
+}
+
+.illustrator:after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 25px;
+    background-color: rgba(54, 126, 223, 1);
+    border-radius: 1000px;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    border-style: solid;
+    border-color: blanchedalmond;
+}
+
+
+/*gravit*/
+
+.gravit {
+    font-family: 'Bungee', cursive;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #444444;
+    position: relative;
+    list-style: none;
+    margin: 50px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.gravit:before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background-color: blanchedalmond;
+    border-radius: 1000px;
+    border-style: solid;
+    border-color: blanchedalmond;
+    box-shadow: 2px 4px #888888;
+}
+
+.gravit:after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 25px;
+    background-color: rgba(54, 126, 223, 1);
+    border-radius: 1000px;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    border-style: solid;
+    border-color: blanchedalmond;
+}
+
+
+
+/*anroid*/
+
+.android {
+    font-family: 'Bungee', cursive;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #444444;
+    position: relative;
+    list-style: none;
+    margin: 25px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.android:before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background-color: blanchedalmond;
+    border-radius: 1000px;
+    border-style: solid;
+    border-color: blanchedalmond;
+    box-shadow: 2px 4px #888888;
+}
+
+.android:after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 25px;
+    background-color: rgba(54, 126, 223, 1);
+    border-radius: 1000px;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    border-style: solid;
+    border-color: blanchedalmond;
+}
+
+/*wordpress*/
+
+.wordpress {
+    font-family: 'Bungee', cursive;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #444444;
+    position: relative;
+    list-style: none;
+    margin: 50px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.wordpress:before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background-color: blanchedalmond;
+    border-radius: 1000px;
+    border-style: solid;
+    border-color: blanchedalmond;
+    box-shadow: 2px 4px #888888;
+}
+
+.wordpress:after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 25px;
+    background-color: rgba(54, 126, 223, 1);
+    border-radius: 1000px;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    border-style: solid;
+    border-color: blanchedalmond;
+}
+
+/*webdev*/
+
+.web {
+    font-family: 'Bungee', cursive;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #444444;
+    position: relative;
+    list-style: none;
+    margin: 50px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.web:before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background-color: blanchedalmond;
+    border-radius: 1000px;
+    border-style: solid;
+    border-color: blanchedalmond;
+    box-shadow: 2px 4px #888888;
+}
+
+.web:after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 25px;
+    background-color: rgba(54, 126, 223, 1);
+    border-radius: 1000px;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    border-style: solid;
+    border-color: blanchedalmond;
+}
+
+/*webdev*
+
+
+/*flutter*/
+
+.flut {
+    font-family: 'Bungee', cursive;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #444444;
+    position: relative;
+    list-style: none;
+    margin: 50px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.flut:before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 25px;
+    background-color: blanchedalmond;
+    border-radius: 1000px;
+    border-style: solid;
+    border-color: blanchedalmond;
+    box-shadow: 2px 4px #888888;
+}
+
+.flut:after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 25px;
+    background-color: rgba(54, 126, 223, 1);
+    border-radius: 1000px;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    border-style: solid;
+    border-color: blanchedalmond;
+}
+
+
+
+.html:after {
+    animation-name: html;
+}
+
+@keyframes html {
+    to {
+        width: 90%;
+    }
+}
+
+.css:after {
+    animation-name: css;
+}
+
+@keyframes css {
+    to {
+        width: 80%;
+    }
+}
+
+.js:after {
+    animation-name: js;
+}
+
+@keyframes js {
+    to {
+        width: 75%;
+    }
+}
+
+.java:after {
+    animation-name: java;
+}
+
+@keyframes java {
+    to {
+        width: 75%;
+    }
+}
+
+.kotlin:after {
+    animation-name: kotlin;
+}
+
+@keyframes kotlin {
+    to {
+        width: 75%;
+    }
+}
+
+.php:after {
+    animation-name: php;
+}
+
+@keyframes php {
+    to {
+        width: 75%;
+    }
+}
+
+.csharp:after {
+    animation-name: csharp;
+}
+
+@keyframes csharp {
+    to {
+        width: 75%;
+    }
+}
+
+
+.dart:after {
+    animation-name: dart;
+}
+
+@keyframes dart {
+    to {
+        width: 75%;
+    }
+}
+
+.photoshop:after {
+    animation-name: photoshop;
+}
+
+@keyframes photoshop {
+    to {
+        width: 75%;
+    }
+}
+
+.gravit:after {
+    animation-name: gravit;
+}
+
+@keyframes gravit {
+    to {
+        width: 75%;
+    }
+}
+
+.illustrator:after {
+    animation-name: illustrator;
+}
+
+@keyframes illustrator {
+    to {
+        width: 75%;
+    }
+}
+
+.android:after {
+    animation-name: android;
+}
+
+@keyframes android {
+    to {
+        width: 75%;
+    }
+}
+
+.wordpress:after{
+    animation-name : wordpress;
+}
+
+@keyframes wordpress{
+    to{
+        width: 75%;
+    }
+}
+
+.flut:after{
+    animation-name : flut;
+}
+
+@keyframes flut{
+    to{
+        width: 75%;
+    }
+}
+
+.web:after{
+    animation-name : web;
+}
+
+@keyframes web{
+    to{
+        width: 75%;
+    }
+}

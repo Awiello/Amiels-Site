@@ -5,27 +5,47 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="aos.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Bungee+Outline&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
+
     <script>
-  function openSlideMenu(){
-    document.getElementById('menu').style.width = '250px';
-    document.getElementById('content').style.marginLeft = '250px';
-  }
-  function closeSlideMenu(){
-    document.getElementById('menu').style.width = '0';
-    document.getElementById('content').style.marginLeft = '0';
-  }
-</script>
+        function openSlideMenu() {
+            document.getElementById('menu').style.width = '250px';
+            document.getElementById('content').style.marginLeft = '250px';
+        }
+
+        function closeSlideMenu() {
+            document.getElementById('menu').style.width = '0';
+            document.getElementById('content').style.marginLeft = '0';
+        }
+    </script>
     <script src="parallax.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AmielCueto|Developer</title>
+    <title>AmielCueto|FullStack</title>
+    <script src="aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1000,
+        });
+    </script>
+
+    <!--<div data-aos="fade-right"></div>-->
+
 </head>
 
 <body>
-   
 
-<!--New Navbar-->
+
+    <!--New Navbar-->
+    <!--
      <div id="content">
 
     <span class="slide">
@@ -39,30 +59,131 @@
         <i class="fas fa-times"></i>
       </a>
       <a href="#">Home</a>
-      <a href="#">About</a>
+      <a href="#sect2">About</a>
       <a href="#">Services</a>
       <a href="#">Portfolio</a>
       <a href="#">Contact</a>
     </div>
   </div>
+-->
 
-        
-<!--old navbar-->
+
+    <!--old navbar-->
+
+    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Amiel Cueto|FullStack</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#LandingSection">Home</a></li>
+                    <li><a href="#sect2">Services</a></li>
+                    <li><a href="#sect3">About</a></li>
+                    <li><a href="#sect4">Projects</a></li>
+                    <li><a href="#sect5">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--old navbar-->
 
 
     <header id="LandingSection">
-                <section>
-                    <div class="divisionOne">
-                        <img src="image.jpg">
-                        <h1 class="headline">Test One</h1>
+        <section id="sect1">
+            <div class="divisionOne">
+                <div class="text-pic-div">
+                    <img class="profile-image" src="image.jpg">
+                    <h3 class="fullName">
+                        Amiel Ian D. Cueto
+                    </h3>
+                    <h4 class="jobTitle">
+                        Full-Stack Developer
+                    </h4>
+                    <div class="introTextDiv">
                     </div>
-                </section>
+
+                </div>
+            </div>
+        </section>
+        <img class="wavetwo" src="wavetwo.png">
+        <img class="waveone" src="waveone.png">
+
     </header>
 
     <div class="slider">
     </div>
+
+
+    <section id="sect2">
+        <div class="sectTwoDiv">
+            <div class="myStatsDiv">
+                <div class="myStatsDivInside">
+                    <h1 class="myStatsTitle">My Skills</h1>
+                </div>
+            </div>
+
+            <div class="mainMyStatsDiv">
+            
+               <div class="blockContainer">
+               
+                <div class="frontEndBlock">
+                <h5>Front-End</h5>
+                    <div class="barContainer">
+                        <li class="html">HTML</li>
+                        <li class="css">CSS</li>
+                        <li class="js">JavaScript</li>
+                        <li class="dart">DART</li>
+
+                    </div>
+                </div>
+
+                <div class="backEndBlock">
+                <h5>Back-End</h5>
+                    <div class="barContainer">
+                        <li class="java">Java</li>
+                        <li class="kotlin">Kotlin</li>
+                        <li class="php">PHP</li>
+                        <li class="csharp">C#</li>
+                    </div>
+                </div>
+
+                <div class="designBlock">
+                <h5>Design</h5>
+                    <div class="barContainer">
+                        <li class="photoshop">Photoshop</li>
+                        <li class="illustrator">Illustrator</li>
+                        <li class="gravit">Gravit Designer</li>
+                    </div>
+                </div>
+                
+                <div class="othersBlock">
+                <h5>Platforms</h5>
+                    <div class="barContainer">
+                        <li class="android">Android</li>
+                        <li class="wordpress">Wordpress</li>
+                        <li class="web">Web Development</li>
+                        <li class="flut">Flutter</li>
+                    </div>
+                </div>
+                
+               </div>
+               
+            </div>
+            
+        </div>
+    </section>
     
-    
+    <section id="sect3">
+    <p>Dis is section 3</p>
+    </section>
+
     <!-- end sections -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
